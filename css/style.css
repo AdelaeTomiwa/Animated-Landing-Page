@@ -18,6 +18,7 @@ body {
 /* UTILITIES */
 img {
    width: 100%;
+   height: 100vh;
 }
 
 /* BURGER */
@@ -55,55 +56,26 @@ img {
    height: 100vh;
 }
 
-.showcase-img img {
-   height: 100vh;
-}
-
 .showcase-content {
    display: flex;
    align-items: flex-start;
    justify-content: center;
    flex-direction: column;
    text-align: left;
-   margin-top: 15vh;
+   margin-top: 12vh;
    padding: 0.5rem 4rem;
    line-height: 1.5;
 }
 
 .showcase-content h1 {
-   position: relative;
-   left: -100%;
    font-size: 4rem;
    margin-bottom: 1rem;
-   animation: showcase;
-   animation-duration: 2s;
-   animation-fill-mode: forwards;
-}
-
-@keyframes showcase {
-   0% {
-      left: -100%;
-   }
-   100% {
-      left: 0%;
-   }
 }
 
 .lead {
    position: relative;
    color: #ccc;
    margin-bottom: 1rem;
-   animation-name: lead;
-   animation-duration: 3s;
-}
-
-@keyframes lead {
-   0% {
-      left: -1000%;
-   }
-   100% {
-      left: 0%;
-   }
 }
 
 .btn {
@@ -113,22 +85,8 @@ img {
    outline: none;
    padding: 0.8rem 2rem;
    font-size: 1rem;
-   opacity: 0;
    cursor: pointer;
    transition: all ease-out 0.5s;
-   animation: btn;
-   animation-duration: 4s;
-   animation-delay: 3s;
-   animation-fill-mode: forwards;
-}
-
-@keyframes btn {
-   0% {
-      opacity: 0;
-   }
-   100% {
-      opacity: 1;
-   }
 }
 
 .btn:hover {
@@ -145,10 +103,6 @@ img {
    height: 100vh;
 }
 
-.about img {
-   height: 100vh;
-}
-
 .about-content {
    display: flex;
    align-items: center;
@@ -158,17 +112,6 @@ img {
    position: relative;
    padding: 0 3rem;
    height: 100vh;
-   animation: about;
-   animation-duration: 6s;
-}
-
-@keyframes about {
-   0% {
-      right: -1000%;
-   }
-   100% {
-      right: 0%;
-   }
 }
 
 /* CONTACT */
@@ -176,10 +119,6 @@ img {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    width: 100%;
-   height: 100vh;
-}
-
-.contact img {
    height: 100vh;
 }
 
@@ -192,12 +131,6 @@ img {
    height: 100vh;
 }
 
-.contact-head {
-   position: relative;
-   animation: contact-head 2s;
-   animation-duration: 8s;
-}
-
 .contact-content h1 {
    font-size: 2.5rem;
 }
@@ -206,35 +139,12 @@ img {
    color: #ccc;
 }
 
-@keyframes contact-head {
-   0% {
-      left: -1000%;
-   }
-   100% {
-      left: 0%;
-   }
-}
-
 .contacts {
    margin-top: 1.5rem;
-   opacity: 0;
-   animation-name: contact;
-   animation-duration: 5s;
-   animation-delay: 6s;
-   animation-fill-mode: forwards;
-}
-
-@keyframes contact {
-   0% {
-      opacity: 0;
-   }
-   100% {
-      opacity: 1;
-   }
 }
 
 .contacts div {
-   border: 3px solid #ccc;
+   border: 3px solid #fff;
    margin: 1rem 0;
    text-align: left;
    padding: 1rem 2rem;
@@ -256,6 +166,9 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1235px) {
+   .showcase-content {
+      margin-top: 1vh;
+   }
    .showcase-content h1 {
       font-size: 3.5rem;
    }
